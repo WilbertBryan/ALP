@@ -65,7 +65,7 @@ CREATE TABLE queue_number (
 
 INSERT INTO customer (id_cust,nik_cust,nama_cust,no_telp_cust,birth_date_cust,email_cust, password_cust)-- bikin 20
 values
-('C00001', '3501020607920001', 'John Doe', '081234567890', '2000-01-01', 'johndoe@gmail.com', 'afc285bebb3dd733796cb06db01cd59a'),-- pass: password123
+('C00001', '3501020607920001', 'John Doe', '081234567890', '2000-01-01', 'johndoe@gmail.com', '482c811da5d5b4bc6d497ffa98491e38'),-- pass: password123
 ('C00002', '1209121401950003', 'Jane Doe', '082345678901', '1995-02-14', 'janedoe@gmail.com', '96b33694c4bb7dbd07391e0be54745fb'),-- pass: password456
 ('C00003', '4412122804990002', 'Bob Smith', '083456789012', '2002-06-30', 'bobsmith@gmail.com', '7d347cf0ee68174a3588f6cba31b8a67'),-- pass: password789
 ('C00004', '3201024501230001', 'John Smith', '081311233145', '1985-03-12', 'john.smith@gmail.com', 'bdc87b9c894da5168059e00ebffb9077'),-- pass: password1234
@@ -342,14 +342,3 @@ values
 ('TRA019','KK011','VIP'),
 ('TRA019','KK011','VIP'),
 ('TRA020','KK037','PLATINUM');
-
-
-
-
-
-
-
-
-
-
-
