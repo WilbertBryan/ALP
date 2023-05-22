@@ -25,7 +25,7 @@ CREATE TABLE concert (
     nama_concert varchar (255),
     kota_concert varchar (255),
     lokasi_concert varchar (255),
-    gambar varchar (255),
+    gambar MEDIUMTEXT,
     desc_concert TEXT
 );
 
