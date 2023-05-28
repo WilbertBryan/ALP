@@ -96,7 +96,7 @@ namespace ALP_APP_DEV
             if (txt_nama.Text == "")
             {
                 txt_nama.Text = "Name";
-                txt_nama.ForeColor = SystemColors.WindowText;
+                txt_nama.ForeColor = SystemColors.GrayText;
             }
         }
 
@@ -114,7 +114,7 @@ namespace ALP_APP_DEV
             if (txt_noTelp.Text == "")
             {
                 txt_noTelp.Text = "Phone Number";
-                txt_noTelp.ForeColor = SystemColors.WindowText;
+                txt_noTelp.ForeColor = SystemColors.GrayText;
             }
         }
 
@@ -132,7 +132,7 @@ namespace ALP_APP_DEV
             if (txt_email.Text == "")
             {
                 txt_email.Text = "Email";
-                txt_email.ForeColor = SystemColors.WindowText;
+                txt_email.ForeColor = SystemColors.GrayText;
             }
         }
 
@@ -150,7 +150,7 @@ namespace ALP_APP_DEV
             if (txt_password.Text == "")
             {
                 txt_password.Text = "0123456789";
-                txt_password.ForeColor = SystemColors.WindowText;
+                txt_password.ForeColor = SystemColors.GrayText;
             }
         }
 
@@ -168,7 +168,7 @@ namespace ALP_APP_DEV
             if (txt_nik.Text == "")
             {
                 txt_nik.Text = "NIK";
-                txt_nik.ForeColor = SystemColors.WindowText;
+                txt_nik.ForeColor = SystemColors.GrayText;
             }
         }
         private void btn_signUp_Click(object sender, EventArgs e)
@@ -214,6 +214,13 @@ namespace ALP_APP_DEV
             }
             else
                 MessageBox.Show("Please fill all the required field.", "Sign Up", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
+
+        private void label_back_Click(object sender, EventArgs e)
+        {
+            Form1 form1 = new Form1();
+            this.Hide();
+            form1.ShowDialog();
         }
     }
 }

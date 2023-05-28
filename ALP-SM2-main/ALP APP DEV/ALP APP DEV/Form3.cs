@@ -20,8 +20,11 @@ namespace ALP_APP_DEV
         MySqlConnection sqlConnection;
         MySqlCommand sqlCommand;
         MySqlDataAdapter sqlDataAdapter;
-        MySqlDataReader sqlDataReader;
         DataTable dtConcert = new DataTable();
+        DataTable dtPicture= new DataTable();
+        public static string concertid = "";
+        public static string judulconcert = "";
+        
         string connection = "server=localhost;uid=root;pwd=root;database=db_concert";
         Label[] labeljudul;
         Label[] labelharga;
@@ -63,6 +66,8 @@ namespace ALP_APP_DEV
                 string imagepath = projectDirectory + dtConcert.Rows[i][1].ToString();
                 //MessageBox.Show(imagepath);
                 pictureBox[i].ImageLocation = imagepath;
+                pictureBox[i].Tag = i.ToString();
+                pictureBox[i].Click += pictureBox_Click;
                 this.panel_concert.Controls.Add(pictureBox[i]);
                 pictureboxY += 290;
 
@@ -73,6 +78,7 @@ namespace ALP_APP_DEV
                 labeljudul[i].Font = new Font("Microsoft Sans Serif", 20);
                 labeljudul[i].Text = dtConcert.Rows[i][0].ToString();
                 labeljudul[i].ForeColor = Color.White;
+                labeljudul[i].Click += label_Click;
                 this.panel_concert.Controls.Add(labeljudul[i]);
                 labeljudulY += 290;
 
@@ -171,6 +177,34 @@ namespace ALP_APP_DEV
             sqlDataAdapter.Fill(dtConcert);
 
             Design();
+        }
+
+        private void pictureBox_Click(object sender, EventArgs e)
+        {
+            dtPicture = new DataTable();
+            PictureBox pbox= (PictureBox)sender;
+            int num=Convert.ToInt32(pbox.Tag.ToString());
+
+            query = $"select id_concert,nama_concert from concert where nama_concert='{dtConcert.Rows[num][0].ToString()}';";
+            sqlCommand = new MySqlCommand(query, sqlConnection);
+            sqlDataAdapter = new MySqlDataAdapter(sqlCommand);
+            sqlDataAdapter.Fill(dtPicture);
+
+            concertid=dtPicture.Rows[0][0].ToString();
+            judulconcert = dtPicture.Rows[0][1].ToString();
+            Form7 form7 = new Form7 ();
+            this.Hide();
+            form7.ShowDialog();
+        }
+
+        private void label_Click(object sender, EventArgs e)
+        {
+            Label selectedlabel = (Label)sender;
+            string selectedvalue = selectedlabel.Text;
+            this.Hide();
+            Form7 form7 = new Form7 ();
+            judulconcert = selectedvalue;
+            form7.ShowDialog();
         }
     }
 }

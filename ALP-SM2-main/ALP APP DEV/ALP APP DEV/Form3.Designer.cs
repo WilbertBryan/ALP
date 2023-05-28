@@ -135,6 +135,7 @@
             // 
             this.panel_concert.AutoScroll = true;
             this.panel_concert.AutoSize = true;
+            this.panel_concert.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.panel_concert.Location = new System.Drawing.Point(-3, 44);
             this.panel_concert.Margin = new System.Windows.Forms.Padding(1);
             this.panel_concert.Name = "panel_concert";
@@ -155,7 +156,7 @@
             this.Controls.Add(this.txt_searchBar);
             this.Controls.Add(this.panel_concert);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "Form3";
             this.Text = "Form3";
             this.Load += new System.EventHandler(this.Form3_Load);

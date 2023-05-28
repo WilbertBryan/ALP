@@ -54,3 +54,5 @@ C:\Users\user\Downloads\ALP-SM2-main\ALP APP DEV\ALP APP DEV\obj\Debug\ALP APP D
 C:\Users\user\Downloads\ALP-SM2-main\ALP APP DEV\ALP APP DEV\obj\Debug\ALP APP DEV.csproj.CopyComplete
 C:\Users\user\Downloads\ALP-SM2-main\ALP APP DEV\ALP APP DEV\obj\Debug\ALP APP DEV.exe
 C:\Users\user\Downloads\ALP-SM2-main\ALP APP DEV\ALP APP DEV\obj\Debug\ALP APP DEV.pdb
+C:\Users\user\Downloads\ALP-SM2-main\ALP APP DEV\ALP APP DEV\obj\Debug\ALP_APP_DEV.Form7.resources
+C:\Users\user\Downloads\ALP-SM2-main\ALP APP DEV\ALP APP DEV\obj\Debug\ALP_APP_DEV.Form8.resources
