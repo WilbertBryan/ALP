@@ -25,7 +25,7 @@ CREATE TABLE concert (
     nama_concert varchar (255),
     kota_concert varchar (255),
     lokasi_concert varchar (255),
-    gambar varchar(255),
+    gambar varchar (255),
     desc_concert TEXT
 );
 
@@ -65,7 +65,7 @@ CREATE TABLE queue_number (
 
 INSERT INTO customer (id_cust,nik_cust,nama_cust,no_telp_cust,birth_date_cust,email_cust, password_cust)-- bikin 20
 values
-('C00001', '3501020607920001', 'John Doe', '081234567890', '2000-01-01', 'johndoe@gmail.com', '482c811da5d5b4bc6d497ffa98491e38'),-- pass: password123
+('C00001', '3501020607920001', 'John Doe', '081234567890', '2000-01-01', 'johndoe@gmail.com', 'afc285bebb3dd733796cb06db01cd59a'),-- pass: password123
 ('C00002', '1209121401950003', 'Jane Doe', '082345678901', '1995-02-14', 'janedoe@gmail.com', '96b33694c4bb7dbd07391e0be54745fb'),-- pass: password456
 ('C00003', '4412122804990002', 'Bob Smith', '083456789012', '2002-06-30', 'bobsmith@gmail.com', '7d347cf0ee68174a3588f6cba31b8a67'),-- pass: password789
 ('C00004', '3201024501230001', 'John Smith', '081311233145', '1985-03-12', 'john.smith@gmail.com', 'bdc87b9c894da5168059e00ebffb9077'),-- pass: password1234
@@ -88,26 +88,26 @@ values
 
 INSERT INTO concert (id_concert,nama_concert,kota_concert,lokasi_concert,gambar,desc_concert) 
 values
-('CON001','COLDPLAY','Jakarta','Gelora Bung Karno Stadion','\\image\\coldplay.jpg','Coldplay is a British rock band formed in 1996. They have released 9 studio albums and are known for hit songs such as "Yellow", "Viva La Vida", "Fix You", and "Paradise". Their music is influenced by various genres, including alternative rock, pop, and electronic. Coldplay is known for their spectacular stage performances and often combines visual and dance elements with strong musical performances.'),
-('CON002','JUSTIN BEIBER','Jakarta','Gelora Bung Karno Stadion','\\image\\justinbeiber.png','Justin Bieber latest album showcases his evolution as an artist, blending pop, R&B, and personal introspection into a captivating musical journey.'),
-('CON003','TAYLOR SWIFT','Jakarta','Gelora Bung Karno Stadion','\\image\\taylorswift.jpg','Taylor Swift latest album, released in 2023, showcases her evolution as an artist, seamlessly blending diverse musical styles while delivering heartfelt lyrics that resonate with listeners.'),
-('CON004','ALAN WALKER','Jakarta','Gelora Bung Karno Stadion','\\image\\alanwalker.jpg','Alan Walker album, known for its captivating electronic soundscapes and infectious melodies, takes listeners on a mesmerizing musical journey.'),
-('CON005','MARSHMELLO','Jakarta','Gelora Bung Karno Stadion','\\image\\marshmello.jpeg','Marshmello newest album, released in 2023, is a vibrant and energetic collection of electronic dance music tracks, featuring collaborations with an array of talented artists, guaranteed to get listeners on their feet and dancing.'),
-('CON006','ADELE','Jakarta','Gelora Bung Karno Stadion','\\image\\adele.jpg','Adele highly anticipated album, released in 2023, is a breathtaking masterpiece that showcases her soulful and powerful vocals, delving into themes of heartbreak, resilience, and personal growth, solidifying her status as one of the greatest vocalists of our time.'),
-('CON007','BLACK PINK','Jakarta','Gelora Bung Karno Stadion','\\image\\blackpink.jpg','Blackpink highly anticipated album showcases their signature blend of catchy pop hooks, fierce rap verses, and empowering anthems, solidifying their status as global icons of K-pop.'),
-('CON008','BTS','Jakarta','Gelora Bung Karno Stadion','\\image\\bts.jpeg','BTS groundbreaking album seamlessly weaves introspective lyrics, diverse musical genres, and dynamic production, capturing the essence of their artistic evolution and solidifying their position as global superstars.'),
-('CON009','MARTIN GARRIX','Jakarta','Gelora Bung Karno Stadion','\\image\\martingarrix.jpg','Martin Garrix captivating album takes listeners on a euphoric journey through pulsating electronic beats, infectious melodies, and collaborations with renowned artists, showcasing his unmatched talent as a producer and his ability to create unforgettable dancefloor anthems.'),
-('CON010','ED SHEERAN','Jakarta','Gelora Bung Karno Stadion','\\image\\edsheeran.jpg','Ed Sheeran heartfelt album is a beautiful tapestry of introspective songwriting, soulful vocals, and a diverse range of musical influences, demonstrating his ability to craft deeply personal and universally relatable music.'),
-('CON011','SELENA GOMEZ','Jakarta','Gelora Bung Karno Stadion','\\image\\selenagomez.jpg','Ed Sheeran and Selena Gomez collaborative album is a captivating fusion of their unique musical styles, showcasing their seamless chemistry and delivering a collection of infectious pop gems that explore themes of love, growth, and self-discovery.'),
-('CON012','ARIANA GRANDE','Jakarta','Gelora Bung Karno Stadion','\\image\\arianagrande.jpg','Ariana Grande dynamic album combines her powerful vocal range with captivating production and introspective lyrics, creating an immersive musical experience that seamlessly transitions between pop, R&B, and dance-pop genres.'),
-('CON013','RIHANA','Jakarta','Gelora Bung Karno Stadion','\\image\\rihana.jpg','Rihanna groundbreaking album pushes artistic boundaries with its genre-bending sound, captivating lyrics, and infectious hooks, solidifying her status as a fearless innovator in the music industry.'),
-('CON014','BEYONCE','Jakarta','Gelora Bung Karno Stadion','\\image\\beyonce.png','Beyoncé visionary album is a masterful blend of empowering messages, diverse musical genres, and flawless vocal performances, showcasing her unmatched artistry and cementing her status as a cultural icon.'),
-('CON015','SIA','Jakarta','Gelora Bung Karno Stadion','\\image\\sia.jpg','Sia emotionally charged album captivates listeners with its hauntingly beautiful vocals, introspective lyrics, and captivating melodies, offering a profound exploration of the human experience.'),
-('CON016','HARRY STYLE','Jakarta','Gelora Bung Karno Stadion','\\image\\harrystyle.jpg','Harry Styles bold and eclectic album defies musical boundaries, effortlessly blending elements of rock, pop, and folk to create a timeless and introspective sonic journey that showcases his remarkable artistry and individuality.'),
-('CON017','DEMI LOVATO','Jakarta','Gelora Bung Karno Stadion','\\image\\demilovato.png','Demi Lovato powerful album serves as a raw and vulnerable testimony, delving into personal struggles with unflinching honesty while offering messages of resilience, empowerment, and self-acceptance.'),
-('CON018','JUSTIN TIMBERLAKE','Jakarta','Gelora Bung Karno Stadion','\\image\\justintimberlake.jpg','Justin Timberlake versatile album seamlessly blends R&B, pop, and soulful grooves, showcasing his impeccable vocal range, infectious melodies, and captivating songwriting, solidifying his status as a true musical chameleon.'),
-('CON019','DUA LIPA','Jakarta','Gelora Bung Karno Stadion','\\image\\dualipa.jpg','Dua Lipa electrifying album is a masterclass in modern pop, delivering a collection of infectious, high-energy tracks infused with disco and dance-pop elements, cementing her status as a powerhouse vocalist and a trendsetter in the music industry.'),
-('CON020','KATY PERRY','Jakarta','Gelora Bung Karno Stadion','\\image\\katyperry.jpg','Katy Perry vibrant album is a kaleidoscope of infectious pop anthems, empowering ballads, and captivating storytelling, showcasing her ability to create unapologetically catchy music that resonates with audiences worldwide.');
+('CON001','COLDPLAY','Jakarta','Gelora Bung Karno Stadion','https://example.com/coldplay.jpg','Coldplay is a British rock band formed in 1996. They have released 9 studio albums and are known for hit songs such as "Yellow", "Viva La Vida", "Fix You", and "Paradise". Their music is influenced by various genres, including alternative rock, pop, and electronic. Coldplay is known for their spectacular stage performances and often combines visual and dance elements with strong musical performances.'),
+('CON002','JUSTIN BEIBER','Jakarta','Gelora Bung Karno Stadion','https://example.com/justinebeiber.jpg','Justin Bieber latest album showcases his evolution as an artist, blending pop, R&B, and personal introspection into a captivating musical journey.'),
+('CON003','TAYLOR SWIFT','Jakarta','Gelora Bung Karno Stadion','https://example.com/taylorswift.jpg','Taylor Swift latest album, released in 2023, showcases her evolution as an artist, seamlessly blending diverse musical styles while delivering heartfelt lyrics that resonate with listeners.'),
+('CON004','ALAN WALKER','Jakarta','Gelora Bung Karno Stadion','https://example.com/alanwalker.jpg','Alan Walker album, known for its captivating electronic soundscapes and infectious melodies, takes listeners on a mesmerizing musical journey.'),
+('CON005','MARSMELLO','Jakarta','Gelora Bung Karno Stadion','https://example.com/marsmello.jpg','Marshmello newest album, released in 2023, is a vibrant and energetic collection of electronic dance music tracks, featuring collaborations with an array of talented artists, guaranteed to get listeners on their feet and dancing.'),
+('CON006','ADELE','Jakarta','Gelora Bung Karno Stadion','https://example.com/adele.jpg','Adele highly anticipated album, released in 2023, is a breathtaking masterpiece that showcases her soulful and powerful vocals, delving into themes of heartbreak, resilience, and personal growth, solidifying her status as one of the greatest vocalists of our time.'),
+('CON007','BLACK PINK','Jakarta','Gelora Bung Karno Stadion','https://example.com/blackpink.jpg','Blackpink highly anticipated album showcases their signature blend of catchy pop hooks, fierce rap verses, and empowering anthems, solidifying their status as global icons of K-pop.'),
+('CON008','BTS','Jakarta','Gelora Bung Karno Stadion','https://example.com/bts.jpg','BTS groundbreaking album seamlessly weaves introspective lyrics, diverse musical genres, and dynamic production, capturing the essence of their artistic evolution and solidifying their position as global superstars.'),
+('CON009','MARTIN GARRIX','Jakarta','Gelora Bung Karno Stadion','https://example.com/martingarrix.jpg','Martin Garrix captivating album takes listeners on a euphoric journey through pulsating electronic beats, infectious melodies, and collaborations with renowned artists, showcasing his unmatched talent as a producer and his ability to create unforgettable dancefloor anthems.'),
+('CON010','ED SHEERAN','Jakarta','Gelora Bung Karno Stadion','https://example.com/edsheeran.jpg','Ed Sheeran heartfelt album is a beautiful tapestry of introspective songwriting, soulful vocals, and a diverse range of musical influences, demonstrating his ability to craft deeply personal and universally relatable music.'),
+('CON011','SELENA GOMEZ','Jakarta','Gelora Bung Karno Stadion','https://example.com/selenagomez.jpg','Ed Sheeran and Selena Gomez collaborative album is a captivating fusion of their unique musical styles, showcasing their seamless chemistry and delivering a collection of infectious pop gems that explore themes of love, growth, and self-discovery.'),
+('CON012','ARIANA GRANDE','Jakarta','Gelora Bung Karno Stadion','https://example.com/arianagrande.jpg','Ariana Grande dynamic album combines her powerful vocal range with captivating production and introspective lyrics, creating an immersive musical experience that seamlessly transitions between pop, R&B, and dance-pop genres.'),
+('CON013','RIHANA','Jakarta','Gelora Bung Karno Stadion','https://example.com/rihana.jpg','Rihanna groundbreaking album pushes artistic boundaries with its genre-bending sound, captivating lyrics, and infectious hooks, solidifying her status as a fearless innovator in the music industry.'),
+('CON014','BEYONCE','Jakarta','Gelora Bung Karno Stadion','https://example.com/beyonce.jpg','Beyoncé visionary album is a masterful blend of empowering messages, diverse musical genres, and flawless vocal performances, showcasing her unmatched artistry and cementing her status as a cultural icon.'),
+('CON015','SIA','Jakarta','Gelora Bung Karno Stadion','https://example.com/sia.jpg','Sia emotionally charged album captivates listeners with its hauntingly beautiful vocals, introspective lyrics, and captivating melodies, offering a profound exploration of the human experience.'),
+('CON016','HARRY STYLE','Jakarta','Gelora Bung Karno Stadion','https://example.com/harrystyle.jpg','Harry Styles bold and eclectic album defies musical boundaries, effortlessly blending elements of rock, pop, and folk to create a timeless and introspective sonic journey that showcases his remarkable artistry and individuality.'),
+('CON017','DEMI LOVATO','Jakarta','Gelora Bung Karno Stadion','https://example.com/demilovato.jpg','Demi Lovato powerful album serves as a raw and vulnerable testimony, delving into personal struggles with unflinching honesty while offering messages of resilience, empowerment, and self-acceptance.'),
+('CON018','JUSTIN TIMBERLAKE','Jakarta','Gelora Bung Karno Stadion','https://example.com/justintimberlake.jpg','Justin Timberlake versatile album seamlessly blends R&B, pop, and soulful grooves, showcasing his impeccable vocal range, infectious melodies, and captivating songwriting, solidifying his status as a true musical chameleon.'),
+('CON019','DUA LIPA','Jakarta','Gelora Bung Karno Stadion','https://example.com/dualipa.jpg','Dua Lipa electrifying album is a masterclass in modern pop, delivering a collection of infectious, high-energy tracks infused with disco and dance-pop elements, cementing her status as a powerhouse vocalist and a trendsetter in the music industry.'),
+('CON020','KATY PERRY','Jakarta','Gelora Bung Karno Stadion','https://example.com/katyperry.jpg','Katy Perry vibrant album is a kaleidoscope of infectious pop anthems, empowering ballads, and captivating storytelling, showcasing her ability to create unapologetically catchy music that resonates with audiences worldwide.');
 
 
 INSERT INTO jadwal (id_jadwal,id_concert,date_jadwal,time_jadwal) -- bikin 2/3 jadwal setiap concert
@@ -153,11 +153,11 @@ values
 INSERT INTO kategori_kursi (id_kategori,nama_kategori,harga,maxcapacity,`status`,id_concert)
 values
 
-('KK001','VIP',3000000,50,'standing','CON001'),
-('KK002','PLATINUM',2400000,100,'standing','CON001'),
-('KK003','GOLD',1800000,150,'standing','CON001'),
-('KK004','SILVER',1400000,200,'seat','CON001'),
-('KK005','BRONZE',1000000,300,'seat','CON001'),
+('KK001','VIP','3000000','50','standing','CON001'),
+('KK002','PLATINUM','2400000','100','standing','CON001'),
+('KK003','GOLD','1800000','150','standing','CON001'),
+('KK004','SILVER','1400000','200','seat','CON001'),
+('KK005','BRONZE','1000000','300','seat','CON001'),
 
 ('KK006','VIP','2000000','50','standing','CON002'),
 ('KK007','PLATINUM','1400000','100','standing','CON002'),
