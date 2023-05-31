@@ -279,7 +279,7 @@ INSERT INTO transaksi (id_order,totalkursi,jenis_pembayaran,id_cust,id_jadwal,id
 values
 ('TRA0001','2','BCA','C00001','JD001','KK001'),--
 ('TRA0002','1','MANDIRI','C00002','JD002','KK008'),--
-('TR0A003','4','AlFAMART','C00003','JD003','KK011'),--
+('TRA0003','4','AlFAMART','C00003','JD003','KK011'),--
 ('TRA0004','1','INDOMART','C00003','JD005','KK024'),--
 ('TRA0005','2','BCA','C00004','JD005','KK025'),--
 ('TRA0006','3','MANDIRI','C00005','JD006','KK029'),--
