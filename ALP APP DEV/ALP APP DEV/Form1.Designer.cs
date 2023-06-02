@@ -46,7 +46,7 @@
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Location = new System.Drawing.Point(237, 35);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(1);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(200, 221);
             this.pictureBox1.TabIndex = 0;
@@ -78,7 +78,7 @@
             // 
             this.txt_email.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_email.Location = new System.Drawing.Point(260, 246);
-            this.txt_email.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.txt_email.Margin = new System.Windows.Forms.Padding(1);
             this.txt_email.Name = "txt_email";
             this.txt_email.Size = new System.Drawing.Size(157, 24);
             this.txt_email.TabIndex = 0;
@@ -89,7 +89,7 @@
             // 
             this.txt_password.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_password.Location = new System.Drawing.Point(260, 306);
-            this.txt_password.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.txt_password.Margin = new System.Windows.Forms.Padding(1);
             this.txt_password.Name = "txt_password";
             this.txt_password.Size = new System.Drawing.Size(157, 24);
             this.txt_password.TabIndex = 0;
@@ -102,7 +102,7 @@
             // 
             this.btn_signIn.AutoEllipsis = true;
             this.btn_signIn.Location = new System.Drawing.Point(286, 358);
-            this.btn_signIn.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.btn_signIn.Margin = new System.Windows.Forms.Padding(1);
             this.btn_signIn.Name = "btn_signIn";
             this.btn_signIn.Size = new System.Drawing.Size(106, 30);
             this.btn_signIn.TabIndex = 0;
@@ -161,7 +161,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);

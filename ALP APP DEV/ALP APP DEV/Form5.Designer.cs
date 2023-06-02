@@ -141,6 +141,7 @@
             this.Controls.Add(this.dateTimePicker);
             this.Controls.Add(this.txt_oldPass);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.Name = "Form5";
             this.Text = "Form5";

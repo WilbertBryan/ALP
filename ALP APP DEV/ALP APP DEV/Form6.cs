@@ -122,6 +122,11 @@ namespace ALP_APP_DEV
         }
         private void Form6_Load(object sender, EventArgs e)
         {
+            this.AutoScroll = false;
+            this.HorizontalScroll.Visible = false;
+            this.HorizontalScroll.Enabled = false;
+            this.AutoScroll = true;
+
             query = $"select c.nama_concert,date_format(j.date_jadwal,'%d %M %Y'),j.time_jadwal,k.nama_kategori,if(`status`='standing','-',q.nokursi),k.harga\r\nfrom customer cus, transaksi t, jadwal j, concert c, kategori_kursi k, queue_number q\r\nwhere cus.id_cust=t.id_cust \r\n\tand t.id_jadwal=j.id_jadwal\r\n    and t.id_kategori=k.id_kategori\r\n    and t.id_order=q.id_order\r\n    and c.id_concert=j.id_concert\r\n    and cus.id_cust='{Form1.customerid}';";
             sqlCommand= new MySqlCommand(query,sqlConnection);
             sqlDataAdapter = new MySqlDataAdapter(sqlCommand);

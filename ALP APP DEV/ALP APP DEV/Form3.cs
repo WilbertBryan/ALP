@@ -228,20 +228,5 @@ namespace ALP_APP_DEV
                 MessageBox.Show("Account not logged out.", "Log Out", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
-
-        private void panel_concert_MouseEnter(object sender, EventArgs e)
-        {
-            panel_concert.Focus();
-        }
-
-        private void panel_concert_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel_concert_MouseClick(object sender, MouseEventArgs e)
-        {
-
-        }
     }
 }

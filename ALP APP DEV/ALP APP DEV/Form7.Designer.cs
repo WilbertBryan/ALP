@@ -100,6 +100,7 @@
             this.Controls.Add(this.labelSelectedDate);
             this.Controls.Add(this.labeldesc);
             this.Controls.Add(this.label_back);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form7";
             this.Text = "Form7";
             this.Load += new System.EventHandler(this.Form7_Load);
