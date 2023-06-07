@@ -127,7 +127,6 @@ namespace ALP_APP_DEV
         }
         private void Form3_Load(object sender, EventArgs e)
         {
-            this.AutoScroll = false;
             this.HorizontalScroll.Visible = false;
             this.HorizontalScroll.Enabled = false;
             this.AutoScroll = true;

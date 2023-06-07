@@ -234,5 +234,13 @@ namespace ALP_APP_DEV
             this.Hide();
             form1.ShowDialog();
         }
+
+        private void pictureBox_mata_Click(object sender, EventArgs e)
+        {
+            if (txt_password.UseSystemPasswordChar == false)
+                txt_password.UseSystemPasswordChar = true;
+            else
+                txt_password.UseSystemPasswordChar = false;
+        }
     }
 }

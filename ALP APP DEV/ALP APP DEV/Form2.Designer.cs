@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.label1 = new System.Windows.Forms.Label();
             this.txt_nama = new System.Windows.Forms.TextBox();
             this.txt_noTelp = new System.Windows.Forms.TextBox();
@@ -38,6 +39,8 @@
             this.dateTimePicker_tglLahir = new System.Windows.Forms.DateTimePicker();
             this.txt_nik = new System.Windows.Forms.TextBox();
             this.label_back = new System.Windows.Forms.Label();
+            this.pictureBox_mata = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_mata)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -154,12 +157,28 @@
             this.label_back.Text = "<";
             this.label_back.Click += new System.EventHandler(this.label_back_Click);
             // 
+            // pictureBox_mata
+            // 
+            this.pictureBox_mata.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox_mata.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_mata.BackgroundImage")));
+            this.pictureBox_mata.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox_mata.InitialImage = null;
+            this.pictureBox_mata.Location = new System.Drawing.Point(437, 377);
+            this.pictureBox_mata.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.pictureBox_mata.Name = "pictureBox_mata";
+            this.pictureBox_mata.Size = new System.Drawing.Size(30, 46);
+            this.pictureBox_mata.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox_mata.TabIndex = 11;
+            this.pictureBox_mata.TabStop = false;
+            this.pictureBox_mata.Click += new System.EventHandler(this.pictureBox_mata_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(670, 535);
+            this.Controls.Add(this.pictureBox_mata);
             this.Controls.Add(this.label_back);
             this.Controls.Add(this.txt_nik);
             this.Controls.Add(this.dateTimePicker_tglLahir);
@@ -175,6 +194,7 @@
             this.Name = "Form2";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_mata)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -192,5 +212,6 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker_tglLahir;
         private System.Windows.Forms.TextBox txt_nik;
         private System.Windows.Forms.Label label_back;
+        private System.Windows.Forms.PictureBox pictureBox_mata;
     }
 }

@@ -146,3 +146,4 @@ C:\Users\user\Downloads\ALP APP DEV\ALP APP DEV\obj\Debug\ALP APP DEV.csproj.Cor
 C:\Users\user\Downloads\ALP APP DEV\ALP APP DEV\obj\Debug\ALP APP DEV.csproj.CopyComplete
 C:\Users\user\Downloads\ALP APP DEV\ALP APP DEV\obj\Debug\ALP APP DEV.exe
 C:\Users\user\Downloads\ALP APP DEV\ALP APP DEV\obj\Debug\ALP APP DEV.pdb
+C:\Users\user\Downloads\ALP APP DEV\ALP APP DEV\obj\Debug\ALP_APP_DEV.Loading.resources

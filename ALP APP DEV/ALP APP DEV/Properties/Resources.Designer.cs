@@ -63,6 +63,16 @@ namespace ALP_APP_DEV.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Capture_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("Capture-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pngtree_vector_location_icon_png_image_956422 {
             get {
                 object obj = ResourceManager.GetObject("pngtree-vector-location-icon-png-image_956422", resourceCulture);

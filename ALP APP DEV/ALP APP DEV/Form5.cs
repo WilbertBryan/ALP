@@ -43,6 +43,7 @@ namespace ALP_APP_DEV
             sqlDataAdapter = new MySqlDataAdapter(sqlCommand);
             sqlDataAdapter.Fill(dtAccount);
             string[]split= dtAccount.Rows[0][0].ToString().Split(' ');
+            MessageBox.Show(dtAccount.Rows[0][0].ToString());
             tanggal=split[0];
             password = dtAccount.Rows[0][1].ToString();
         }

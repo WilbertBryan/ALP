@@ -143,5 +143,14 @@ namespace ALP_APP_DEV
 
            
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            if(txt_password.UseSystemPasswordChar == false)
+                txt_password.UseSystemPasswordChar =true;
+            else
+                txt_password.UseSystemPasswordChar = false;
+
+        }
     }
 }
